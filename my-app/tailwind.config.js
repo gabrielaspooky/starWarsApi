@@ -6,7 +6,13 @@ module.exports = {
     fontFamily: {
       starwars: ["Star Wars", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background': "url('/img/background.jpg')",
+       
+      }
+
+    },
   },
   plugins: [],
 }

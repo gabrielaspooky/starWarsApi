@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Card from './Card';
+import LoadingScreen from './LoadingScreen';
 
 const Characters = ({ charactersId }) => {
   const [characters, setCharacters] = useState(null);
@@ -22,7 +23,7 @@ const Characters = ({ charactersId }) => {
 
   console.log(characters);
 
-  if (!characters) return <div>Loading...</div>;
+  if (!characters) return <LoadingScreen />;
 
   return (
     <>
